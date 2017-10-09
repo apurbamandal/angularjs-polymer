@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Polymer + Angular</title>
+
+  <!-- Importing Web Component's Polyfill -->
+  <script src="components/webcomponentsjs/webcomponents.min.js"></script>
+  <link rel="import" href="/assets/polymer/custom-element.html">
+   <link rel="import" href="/assets/polymer/custom-header.html">
+   <link rel="import" href="/assets/polymer/custom-body.html">
+   <link rel="import" href="https://raw.githubusercontent.com/Polymer/polymer/master/polymer.html">
+   
+  <!-- Importing Custom Elements -->
+  <link rel="import" href="src/my-element.html">
+</head>
+<body ng-app="myApp" ng-controller="MyCtrl as vm">
+
+ 
+  <!-- Using Custom Elements -->
+  <!-- <custom-header></custom-header> -->
+<custom-header ></custom-header>
+
+<custom-body>
+    <fieldset>
+        <legend>Angular</legend>
+        <p><span class="red-color">Angular2 binding is <b>{{ vm.cool }}</b>!</span></p>
+        <p><input type="text" ng-model="vm.cool"></p>
+        <b>contenteditable:</b> <div
+          
+      
+        >**{{vm.cool}}</div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Polymer</legend>
+        <custom-element owner="{{vm.cool}}"></custom-element>
+      </fieldset>
+</custom-body>
+  
+
+  <!-- Importing AngularJS -->
+  <script src="components/angular/angular.js"></script>
+
+  <!-- Loading AngularJS scripts -->
+  <script src="src/my-angular-app.js"></script>
+</body>
+</html>

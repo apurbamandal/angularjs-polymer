@@ -1,4 +1,4 @@
-# angularjs-polymer
+# Angularjs-Polymer
 Angular with polymer components 
 This Project can serve as a boilerplate for your Angular-Polymer  project.
 

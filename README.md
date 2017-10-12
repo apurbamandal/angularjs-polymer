@@ -14,7 +14,7 @@ For angular-cli usage : [Angular-cli](https://github.com/angular/angular-cli/wik
 
 ## Usage : 
 
-After installing angular-cli, go to the project and run `npm install` and then `ng serve` command to serve this project on `localhost:4200`.
+After installing angular-cli, go to the project and run `npm install` or `python -m http.server [<portNo>]` and then `ng serve` command to serve this project on `localhost:4200`.
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
